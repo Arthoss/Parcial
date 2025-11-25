@@ -1,0 +1,12 @@
+ur Repositorio GitHub
+https://github.com/Arthoss/Parcial
+
+URL comando para ingresar al proyecto sonarqube
+http://localhost:9000/project/issues?id=Parcial&issueStatuses=OPEN%2CCONFIRMED
+
+URL para ejecutar el escáner
+dotnet-sonarscanner begin /k:Parcial /d:sonar.host.url=http://localhost:9000 /d:sonar.login=squ_29c2fb54200c03c05dbfba3317ffd69234f7b504
+
+dotnet build
+
+dotnet-sonarscanner end /d:sonar.login=squ_29c2fb54200c03c05dbfba3317ffd69234f7b504
